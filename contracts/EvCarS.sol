@@ -43,13 +43,3 @@ contract EVCharging {
         payable(owner).transfer(totalCost);
     }
 }
-
-/*
-This smart contract template allows for the charging of electric vehicles and the integration of the charging process with the grid. The contract includes the following features:
-Variables to store the owner of the contract, the charging fee, the charging time, the kWh used, the total cost, and whether or not charging is in progress.
-Events to emit when charging starts and stops.
-A constructor function to set the initial values of the variables.
-A function to start charging, which requires the user to send enough ether to cover the charging fee and checks that charging is not already in progress.
-A function to stop charging, which takes the amount of kWh used as an argument, calculates the total cost, emits an event, and transfers the total cost to the owner of the contract.
-This smart contract template can be customized and integrated with other smart contracts and blockchain-based systems to create a complete EV car charging and grid integration solution.
-*/
